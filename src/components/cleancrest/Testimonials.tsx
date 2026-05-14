@@ -4,11 +4,9 @@ import { SectionLabel } from "./SectionLabel";
 
 const items = [
   { name: "Sarah Mitchell", city: "London", quote: "Absolutely brilliant service! My flat has never looked this clean. Will book again." },
-  { name: "James Carter", city: "Manchester", quote: "Used SparkleNest for our office. Professional and thorough — the team are an absolute credit." },
+  { name: "James Carter", city: "Manchester", quote: "Used CleanCrest for our office. Professional and thorough — the team are an absolute credit." },
   { name: "Priya Sharma", city: "Birmingham", quote: "The eco-friendly products are a bonus — safe for my kids and dog and they smell lovely!" },
   { name: "Tom Hughes", city: "Bristol", quote: "Booked end-of-tenancy clean. Got my full deposit back. 5 stars all the way." },
-  { name: "Emma Clarke", city: "Leeds", quote: "They arrived on time and worked so efficiently. Highly recommend to anyone in Leeds." },
-  { name: "David Osei", city: "Glasgow", quote: "Friendly staff, great results. Will be booking every month from now on." },
 ];
 
 export function Testimonials() {
@@ -17,8 +15,8 @@ export function Testimonials() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="text-center mb-14">
           <SectionLabel>Testimonials</SectionLabel>
-          <h2 className="mt-3 text-4xl lg:text-5xl font-bold text-primary text-balance">
-            Happy Customers Say About SparkleNest
+          <h2 className="mt-3 text-3xl lg:text-4xl font-bold text-primary text-balance">
+            Happy Customers Say About CleanCrest
           </h2>
         </div>
 

@@ -19,15 +19,15 @@ export function About() {
           transition={{ duration: 0.7 }}
           className="grid grid-cols-2 gap-4"
         >
-          <img src={a1} alt="" loading="lazy" className="w-full h-56 object-cover rounded-2xl" />
-          <img src={a2} alt="" loading="lazy" className="w-full h-56 object-cover rounded-2xl mt-8" />
-          <img src={a3} alt="" loading="lazy" className="w-full h-56 object-cover rounded-2xl -mt-4" />
-          <img src={a4} alt="" loading="lazy" className="w-full h-56 object-cover rounded-2xl mt-4" />
+          <img src={a1} alt="" loading="lazy" className="w-full h-auto object-cover rounded-2xl" />
+          <img src={a2} alt="" loading="lazy" className="w-full h-auto object-cover rounded-2xl mt-8" />
+          <img src={a3} alt="" loading="lazy" className="w-full h-auto object-cover rounded-2xl -mt-4" />
+          <img src={a4} alt="" loading="lazy" className="w-full h-auto object-cover rounded-2xl mt-4" />
         </motion.div>
 
         <div>
           <SectionLabel>About Company</SectionLabel>
-          <h2 className="mt-3 text-4xl lg:text-5xl font-bold text-primary text-balance">
+          <h2 className="mt-3 text-3xl lg:text-4xl font-bold text-primary text-balance">
             Making Clean, Healthy Spaces Accessible to Everyone
           </h2>
 
@@ -72,12 +72,7 @@ export function About() {
             ))}
           </ul>
 
-          <a
-            href="#contact"
-            className="mt-8 inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-semibold hover:bg-primary-light transition"
-          >
-            About Us <ArrowRight className="w-4 h-4" />
-          </a>
+
         </div>
       </div>
     </section>

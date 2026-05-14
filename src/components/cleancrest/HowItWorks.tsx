@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { SectionLabel } from "./SectionLabel";
-import img from "@/assets/how-it-works.jpg";
+import img from "@/assets/how-it-works-new.jpg";
 
 const steps = [
   { n: "01", title: "Fill Up the Appointment Form", desc: "Choose your service, date, and location online in minutes." },
@@ -23,7 +23,7 @@ export function HowItWorks() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8 grid lg:grid-cols-2 gap-14 items-center pb-20">
         <motion.img
           src={img}
-          alt="SparkleNest team cleaning a living room"
+          alt="Modern clean bathroom showing professional results"
           loading="lazy"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -34,7 +34,7 @@ export function HowItWorks() {
 
         <div>
           <SectionLabel light>How It Works</SectionLabel>
-          <h2 className="mt-3 text-4xl lg:text-5xl font-bold text-balance">
+          <h2 className="mt-3 text-3xl lg:text-4xl font-bold text-balance">
             Step-by-step care process made simple for you
           </h2>
 

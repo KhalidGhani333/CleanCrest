@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground pt-20 pb-8">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-12">
           <div>
             <Logo light />
             <p className="mt-4 text-primary-foreground/70 text-sm">
@@ -43,7 +43,7 @@ export function Footer() {
             <h4 className="font-bold mb-5 text-lg">Get In Touch</h4>
             <ul className="space-y-3 text-sm text-primary-foreground/70">
               <li className="flex gap-3"><Phone className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 0800 123 4567</li>
-              <li className="flex gap-3"><Mail className="w-4 h-4 text-accent shrink-0 mt-0.5" /> hello@sparklenest.co.uk</li>
+              <li className="flex gap-3"><Mail className="w-4 h-4 text-accent shrink-0 mt-0.5" /> hello@cleancrest.co.uk</li>
               <li className="flex gap-3"><MapPin className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 45 Green Lane, London, SW1A 1AA</li>
               <li className="flex gap-3"><Clock className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Mon–Sun · 8am–8pm</li>
             </ul>
@@ -63,7 +63,7 @@ export function Footer() {
                 placeholder="Email address"
                 className="flex-1 bg-transparent px-4 py-2 text-sm placeholder:text-primary-foreground/50 outline-none"
               />
-              <button className="bg-accent text-accent-foreground font-semibold px-5 py-2 rounded-full text-sm hover:scale-105 transition">
+              <button className="bg-accent text-accent-foreground font-semibold px-3 py-2 rounded-full text-sm hover:scale-105 transition md:px-5 md:py-2">
                 Subscribe
               </button>
             </form>
@@ -71,7 +71,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 pt-6 border-t border-primary-foreground/15 text-center text-xs text-primary-foreground/60">
-          © 2026 SparkleNest Ltd. All rights reserved. Registered in England & Wales.
+          Powered By <a href="https://axistechgroup.com/" target="_blank" rel="noopener noreferrer" className="hover:text-accent underline underline-offset-4">AxisTechGroup</a>
         </div>
       </div>
     </footer>

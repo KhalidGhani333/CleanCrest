@@ -41,7 +41,7 @@
 :root {
   --radius: 0.75rem;
 
-  /* SparkleNest brand */
+  /* CleanCrest brand */
   --background: oklch(0.985 0.012 155);          /* #F2F7F4 mint white */
   --foreground: oklch(0.18 0 0);                 /* #1A1A1A */
   --card: oklch(1 0 0);

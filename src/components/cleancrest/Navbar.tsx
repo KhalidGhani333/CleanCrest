@@ -8,7 +8,6 @@ const links = [
   { label: "Services", href: "#services" },
   { label: "About", href: "#about" },
   { label: "How It Works", href: "#how" },
-  { label: "Pricing", href: "#pricing" },
   { label: "Blog", href: "#blog" },
   { label: "Contact", href: "#contact" },
 ];
@@ -33,14 +32,16 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-5 lg:px-8 flex items-center justify-between h-18 py-4">
-        <Logo />
+        <Logo light={!scrolled} />
 
-        <nav className="hidden lg:flex items-center gap-7">
+        <nav className="hidden lg:flex items-center gap-5">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all hover:after:w-full"
+              className={`text-sm font-medium transition-colors relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all hover:after:w-full ${
+                scrolled ? "text-foreground/80 hover:text-primary" : "text-primary-foreground/90 hover:text-white"
+              }`}
             >
               {l.label}
             </a>
@@ -49,22 +50,15 @@ export function Navbar() {
 
         <div className="hidden md:flex items-center gap-4">
           <a
-            href="tel:08001234567"
-            className="flex items-center gap-2 text-sm font-medium text-primary"
-          >
-            <Phone className="w-4 h-4" />
-            0800 123 4567
-          </a>
-          <a
             href="#contact"
-            className="bg-accent text-accent-foreground px-5 py-2.5 rounded-full text-sm font-semibold hover:scale-105 transition-transform pulse-glow"
+            className="bg-accent text-accent-foreground px-3 py-2 rounded-full text-sm font-semibold hover:scale-105 transition-transform pulse-glow md:px-5 md:py-2.5"
           >
             Book Now
           </a>
         </div>
 
         <button
-          className="lg:hidden text-primary p-2"
+          className={`lg:hidden p-2 ${scrolled ? "text-primary" : "text-primary-foreground"}`}
           onClick={() => setOpen(!open)}
           aria-label="Menu"
         >

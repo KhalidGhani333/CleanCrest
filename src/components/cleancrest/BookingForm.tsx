@@ -62,7 +62,7 @@ export function BookingForm() {
         />
         <div>
           <SectionLabel>Get a Free Quote</SectionLabel>
-          <h2 className="mt-3 text-4xl lg:text-5xl font-bold text-primary text-balance">
+          <h2 className="mt-3 text-3xl lg:text-4xl font-bold text-primary text-balance">
             Book Any Kind of Cleaning Schedule
           </h2>
           <p className="mt-3 text-muted-foreground">

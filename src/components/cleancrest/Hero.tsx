@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ShieldCheck, Star } from "lucide-react";
-import heroImg from "@/assets/hero-cleaner.jpg";
+import howItWorksImg from "@/assets/how-it-works.jpg";
 
 const headingWords = "Residential & Commercial Cleaning Tailored For You.".split(" ");
 
@@ -25,7 +25,7 @@ export function Hero() {
             Trusted Cleaning Service Company
           </motion.span>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] text-balance">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.05] text-balance">
             {headingWords.map((word, i) => (
               <motion.span
                 key={i}
@@ -88,39 +88,7 @@ export function Hero() {
             </a>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.4 }}
-            className="mt-8 flex items-center gap-4"
-          >
-            <div className="flex -space-x-3">
-              {[
-                "https://i.pravatar.cc/80?img=47",
-                "https://i.pravatar.cc/80?img=32",
-                "https://i.pravatar.cc/80?img=12",
-                "https://i.pravatar.cc/80?img=68",
-              ].map((src, i) => (
-                <img
-                  key={i}
-                  src={src}
-                  alt=""
-                  loading="lazy"
-                  className="w-10 h-10 rounded-full border-2 border-primary object-cover"
-                />
-              ))}
-            </div>
-            <div>
-              <div className="flex gap-0.5 text-accent">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 fill-accent" />
-                ))}
-              </div>
-              <p className="text-xs text-primary-foreground/70">
-                Rated 5.0 by 2,000+ happy clients
-              </p>
-            </div>
-          </motion.div>
+          {/* The rating paragraph and stars/avatars section were removed */}
         </div>
 
         <motion.div
@@ -130,11 +98,11 @@ export function Hero() {
           className="relative"
         >
           <img
-            src={heroImg}
-            alt="Smiling SparkleNest cleaner"
+            src={howItWorksImg}
+            alt="CleanCrest team cleaning a living room"
             width={1024}
             height={1280}
-            className="w-full h-[480px] lg:h-[560px] object-cover rounded-3xl shadow-2xl"
+            className="w-full h-auto object-cover rounded-3xl shadow-2xl"
           />
           <motion.div
             initial={{ opacity: 0, y: 20 }}

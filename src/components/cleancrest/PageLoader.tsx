@@ -40,7 +40,7 @@ export function PageLoader() {
               transition={{ duration: 0.6 }}
               className="font-display text-4xl text-primary-foreground font-bold flex items-center gap-2"
             >
-              <span className="text-accent">✦</span> SparkleNest
+              <span className="text-accent">✦</span> CleanCrest
             </motion.div>
           </div>
         </motion.div>

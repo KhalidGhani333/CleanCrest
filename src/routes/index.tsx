@@ -14,8 +14,8 @@ import { PageLoader } from "@/components/cleancrest/PageLoader";
 
 export const Route = createFileRoute("/")({
   head: () => ({
+    title: "CleanCrest — Professional Cleaning Service",
     meta: [
-      { title: "CleanCrest — A Cleaner Home. A Happier Life. | UK Cleaning Service" },
       {
         name: "description",
         content:
